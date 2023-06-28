@@ -10,7 +10,7 @@ console.log(product);
 	<div class="card-body px-4">Quantity: <strong>5</strong></div>
 	<div class="card-body px-4">Price: ${product.price}</div>
     <footer class="card-footer">
-        <button class="btn variant-glass-primary">Add</button>
-        <button class="btn variant-glass-error">Remove</button>
+        <button class="p-2 rounded variant-glass-primary">Add</button>
+        <button class="p-2 rounded variant-glass-error">Remove</button>
     </footer>
 </article>
