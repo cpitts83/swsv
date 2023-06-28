@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ProductCard from '$lib/productCard.svelte';
 	import { get } from 'svelte/store';
-	import { cartItems } from '../cart';
+	import { cartItems } from '../../cart';
 
 	const products: Product[] = [
 		{
@@ -54,4 +54,3 @@
 		</div>
 	</div>
 </div>
-

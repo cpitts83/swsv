@@ -14,3 +14,8 @@ declare class Product {
 	price: number;//stripe price
 	photo: string; //stripe photo
 }
+
+declare class CartItem {
+	id: string; //stripe id
+	quantity: number; //stripe quantity
+}

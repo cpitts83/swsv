@@ -10,7 +10,7 @@
 	import Footer from './Footer.svelte';
 </script>
 <Header />
-<slot />
 <Showcase />
+<slot />
 <Footer />
-```
+
