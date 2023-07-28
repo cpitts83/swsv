@@ -6,11 +6,26 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import Header from './Header.svelte';
-	import Showcase from './Showcase.svelte';
 	import Footer from './Footer.svelte';
+	import Logo from '$lib/prodpics/logo.png'
 </script>
-<Header />
-<Showcase />
-<slot />
-<Footer />
+
+<main>
+	<Header />
+	<img src={Logo} alt="Salute Weight Lifters Logo" srcset="" />
+	<slot />
+	<Footer />
+</main>
+
+<style>
+	img {
+		opacity: 0.25;
+		overflow: hidden;
+		position: fixed;
+	    margin: 40px;
+		z-index: -1;
+	}
+</style>
+
+
 

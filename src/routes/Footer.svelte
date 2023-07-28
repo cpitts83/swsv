@@ -1,6 +1,6 @@
 <script>
-    import SoTech from '$lib/sotechlogo.png'
-    import Insta from '$lib/instagram.png'
+    import SoTech from '$lib/prodpics/sotechlogo.png'
+    import Insta from '$lib/prodpics/instagram.png'
   </script>
   
   <footer class="bg-gray-800 text-primary">
