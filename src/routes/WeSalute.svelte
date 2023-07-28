@@ -1,5 +1,5 @@
 <script>
-	import Bg from '$lib/bgimg.png';
+	import Bg from '$lib/prodpics/bgimg.png';
 </script>
 
 <main class="bg-cover bg-center" style="background-image: url({Bg})">
