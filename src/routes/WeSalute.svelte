@@ -1,62 +1,29 @@
 <script>
-	import Bg from '$lib/bgimg.jpg';
-
-	/**
-	 * @type {any}
-	 */
-	let scroll;
+	import Bg from '$lib/bgimg.png';
 </script>
 
-<svelte:window bind:scrollY={scroll} />
-<main>
-	<article class="card" style:transform={`translate3d(0, ${scroll}px, 0)`} style:background="blue">
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et unde ab expedita odit quia
-			excepturi illum laborum adipisci repellendus veniam omnis sed, inventore nam at vitae incidunt
-			repellat dolorum?
-		</p>
-		<h1 class="card p-4 text-2xl">We Salute You</h1>
-	</article>
-	<article class="card">
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et unde ab expedita odit quia
-			excepturi illum laborum adipisci repellendus veniam omnis sed, inventore nam at vitae incidunt
-			repellat dolorum?
-		</p>
-		<h1 class="card p-4 text-2xl">We Salute You</h1>
-	</article>
-	<article class="card">
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et unde ab expedita odit quia
-			excepturi illum laborum adipisci repellendus veniam omnis sed, inventore nam at vitae incidunt
-			repellat dolorum?
-		</p>
-		<h1 class="card p-4 text-2xl">We Salute You</h1>
-	</article>
-	<article class="card">
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et unde ab expedita odit quia
-			excepturi illum laborum adipisci repellendus veniam omnis sed, inventore nam at vitae incidunt
-			repellat dolorum?
-		</p>
-		<h1 class="card p-4 text-2xl">We Salute You</h1>
-	</article>
-	<article class="card">
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et unde ab expedita odit quia
-			excepturi illum laborum adipisci repellendus veniam omnis sed, inventore nam at vitae incidunt
-			repellat dolorum?
-		</p>
-		<h1 class="card p-4 text-2xl">We Salute You</h1>
-	</article>
+<main class="bg-cover bg-center" style="background-image: url({Bg})">
+	{#each [1, 2, 3, 4, 5] as _, i (i)}
+		<article class="card sk-card sk-card-white sk-rounded sk-shadow-lg" style="transform: translateY({i * 10}px)">
+			<p class="sk-text sk-text-gray-700">
+				To the individuals that hit the gym day in and day out, persevering through the pain, and
+				pushing themselves to a new level and personal best
+			</p>
+			<h1 class="sk-text-2xl sk-font-bold sk-m-4">We Salute You</h1>
+		</article>
+	{/each}
 </main>
+
 <style>
-	p {
-		position: fixed;
-		z-index: 10;
+	main {
+		height: 200vh;
 	}
-	h1 {
-		position: fixed;
-		z-index: 5;
+
+	.card {
+		position: relative;
+		top: 0vh;
+		max-width: 50rem;
+		margin: 0 auto;
+		padding: 1rem;
 	}
 </style>

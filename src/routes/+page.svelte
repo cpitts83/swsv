@@ -3,6 +3,7 @@
 	import { get } from 'svelte/store';
 	import { cartItems } from '../cart';
 	import Showcase from './Showcase.svelte';
+	import WeSalute from './WeSalute.svelte';
 
 
 	const products: Product[] = [
@@ -49,6 +50,7 @@
 	}
 </script>
 <Showcase />
+<WeSalute />
 <div class="container h-full mx-auto flex justify-center items">
 	
 	<div class="grid grid-cols-3 gap-4">
