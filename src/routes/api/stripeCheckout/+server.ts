@@ -1,7 +1,8 @@
 import type { RequestHandler } from "./$types";
+import { SECRET_STRIPE_KEY } from "$env/static/private";
 import Stripe from 'stripe';
 
-const stripe = new Stripe(import.meta.env.VITE_SECRET_STRIPE_KEY, {
+const stripe = new Stripe(SECRET_STRIPE_KEY, {
     apiVersion: '2022-11-15',
 });
 
@@ -23,7 +24,7 @@ export const POST: RequestHandler = async ({request}) => {
         stripe wants: [ { price: "1", quantity: 6 }, { price: "2", quantity: 3 } ]
     */
 
-    let lineItems : any = [];
+    const lineItems : any = [];
     items.forEach((item: any) => {
         lineItems.push( { price: item.id, quantity: item.quantity } )
     });

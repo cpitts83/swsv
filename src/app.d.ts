@@ -13,6 +13,7 @@ declare class Product {
 	name: string; //stripe name
 	price: number;//stripe price
 	photo: string; //stripe photo
+	sizes: string[]; //stripe sizes
 }
 
 declare class CartItem {

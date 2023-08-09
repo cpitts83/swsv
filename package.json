@@ -39,6 +39,7 @@
 	"type": "module",
 	"dependencies": {
 		"stripe": "^12.10.0",
-		"svelte-feather-icons": "^4.0.1"
+		"svelte-feather-icons": "^4.0.1",
+		"vercel": "^31.2.0"
 	}
 }

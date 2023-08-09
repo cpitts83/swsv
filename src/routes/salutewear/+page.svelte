@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ProductCard from '$lib/productCard.svelte';
 	import { get } from 'svelte/store';
-import { cartItems } from '$lib/cart'
+    import { cartItems } from '$lib/cart'
 
 
 

@@ -24,15 +24,20 @@
       To the individuals that hit the gym day in and day out, persevering through the pain, and pushing themselves to a new level and personal best,
     </p>
     <button class={animate ? 'fade-slide-up animate btn variant-filled-primary' : 'fade-slide-up btn variant-filled-primary'}>
-      <a href="/merch">Shop Now</a>
+      <a href="/salutewear">Shop Now</a>
     </button>
   </div>
 </section>
 
 
 <style>
+section {
+  top: 23px;
+}
  img {
   opacity: .75;
+  max-width: 150rem;
+  max-height: 100rem;
  }
 
   .fade-slide-up {
@@ -44,4 +49,5 @@
     opacity: 1;
     transform: translateY(0);
   }
+
 </style>
